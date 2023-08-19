@@ -1,10 +1,23 @@
 'use strict';
 
+
 const templates = {
-  articleLink: Handlebars.compile(document.querySelector('#template-article-link').innerHTML),
-  articleTagLink: Handlebars.compile(document.querySelector("#template-tag-link").innerHTML),
-  articleAuthorLink: Handlebars.compile(document.querySelector("#template-author-link").innerHTML)
-}
+  articleLink: Handlebars.compile(
+    document.querySelector('#template-article-link').innerHTML
+  ),
+  tagLink: Handlebars.compile(
+    document.querySelector('#template-tag-link').innerHTML
+  ),
+  authorLink: Handlebars.compile(
+    document.querySelector('#template-author-link').innerHTML
+  ),
+  tagCloudLink: Handlebars.compile(
+    document.querySelector('#template-tag-cloud-link').innerHTML
+  ),
+  authorList: Handlebars.compile(
+    document.querySelector('#template-author-list-link').innerHTML
+  ),
+};
 
 const titleClickHandler = function(event){
   event.preventDefault();
